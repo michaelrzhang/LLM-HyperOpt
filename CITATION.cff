@@ -1,0 +1,36 @@
+# ABOUTME: Machine-readable citation metadata so GitHub shows a "Cite this repository" button.
+# ABOUTME: Points at the paper this toolkit implements.
+
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "LLM-HyperOpt: Using Large Language Models for Hyperparameter Optimization"
+authors:
+  - family-names: Zhang
+    given-names: Michael R.
+  - family-names: Desai
+    given-names: Nishkrit
+  - family-names: Bae
+    given-names: Juhan
+  - family-names: Lorraine
+    given-names: Jonathan
+  - family-names: Ba
+    given-names: Jimmy
+repository-code: "https://github.com/michaelrzhang/LLM-HyperOpt"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Using Large Language Models for Hyperparameter Optimization"
+  authors:
+    - family-names: Zhang
+      given-names: Michael R.
+    - family-names: Desai
+      given-names: Nishkrit
+    - family-names: Bae
+      given-names: Juhan
+    - family-names: Lorraine
+      given-names: Jonathan
+    - family-names: Ba
+      given-names: Jimmy
+  journal: "arXiv preprint arXiv:2312.04528"
+  year: 2023
+  url: "https://arxiv.org/abs/2312.04528"

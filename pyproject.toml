@@ -1,0 +1,35 @@
+# ABOUTME: Packaging and tooling config for the llm_hyperopt ledger core and its CLI.
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-hyperopt"
+version = "0.1.0"
+description = "LLM-in-the-loop hyperparameter optimization: a reproducible trial ledger driven by the /tune skill."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Michael R. Zhang" }]
+keywords = ["hyperparameter optimization", "llm", "machine learning", "automl"]
+dependencies = [
+    "pydantic>=2.0",
+    "pyyaml>=5.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+llm-hyperopt = "llm_hyperopt.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/michaelrzhang/LLM-HyperOpt"
+Paper = "https://arxiv.org/abs/2312.04528"
+
+[tool.setuptools.packages.find]
+include = ["llm_hyperopt*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

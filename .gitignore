@@ -1,2 +1,14 @@
 # pycache
 __pycache__/
+*.pyc
+
+# packaging / build
+*.egg-info/
+build/
+dist/
+
+# study ledgers written during optimization runs
+.llm_hyperopt/
+
+# test / tooling caches
+.pytest_cache/
